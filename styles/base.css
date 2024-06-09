@@ -1,0 +1,257 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+    
+    body{
+    max-width: 1000px;
+    text-align: center;
+    margin: auto;
+    font-family: 'Anek Devanagari';
+    font-weight: 400;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+/* ----------------------------------header------------------------------------ */
+
+#head-bg{
+    background-color: #00509d;
+    justify-content: center;
+    color: white;
+    padding: 20px;
+    font-size: 13px;
+}
+
+.full-name{
+    color: #fff6cc;
+}
+
+nav{
+    background-color: #fff6cc;
+    margin: 0 auto;
+    border-radius: 0px 0px 15px 15px;
+}
+    
+nav a{
+    display: block;
+    font-weight: 700;
+    text-decoration: none;
+    color: #00509d;
+	padding: 10px;
+    font-size: 20px;
+    }
+
+nav a:hover{
+    color: #fb8500;
+    text-decoration: underline;
+}
+
+nav a:active{
+    color: #fb8500;
+}
+
+/* ------------------------------------main---------------------------------------- */
+
+main{
+    display: grid;
+    grid-template-columns: 70% 30%;
+    gap: 10px;
+    margin: 20px;
+    justify-content: center;
+}
+
+/* Left card */
+.left-card-title{
+    background-color: #00509d;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    color: white;
+    margin-bottom: 10px;
+}
+
+#left-card{
+    border: 3px solid #00509d;
+    border-radius: 15px;
+    display: grid;
+    overflow: hidden;
+    position: relative;
+}
+
+#top-group-left-card{
+    display: grid;
+    grid-template-columns: 80% 2px auto;
+    /* grid-template-columns: 80% 20%; */
+}
+
+.left-card-text-about-me{
+    margin: 20px;
+    text-align: justify;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    }
+    
+#pic-of-me img{
+    width: 100px;
+    height: auto;
+    border: 3px solid #00509d;
+    border-radius: 10px;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+#bottom-group-left-card{
+    display: grid;
+    grid-template-columns: auto 2px 80%;
+}
+
+#ghana-flag img{
+    width: 110px;
+    height: auto;
+    border: 3px solid #00509d;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.left-card-about-ghana{
+    margin: 10px;
+    margin-right: 50px;
+    text-align: justify;
+    grid-column: 3/4;
+}
+
+#ghana-description{
+    font-style: italic;
+    font-size: small;
+}
+
+.country-card-title{
+    text-align: center;
+}
+
+hr{
+    border: 1px solid #00509d;
+    width: 80%;
+    margin: auto;
+}
+
+
+/* Rright card */
+#right-card{
+    border: 3px solid #00509d;
+    border-radius: 15px;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    overflow: hidden;
+    position: relative;
+    
+}
+
+.right-card-title{
+    background-color: #00509d;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    color: white;
+    margin-bottom: 10px;
+}
+
+#right-card-links a{
+    color: #00509d;
+    font-weight: 700;
+}
+
+#right-card-links{
+    margin: 20px;
+    align-content: center;
+    text-align: left;
+    list-style-type: none;
+}
+
+
+/* ------------------------------------footer-------------------------------------- */
+footer{
+    background-color: #00509d;
+    color: white;
+    padding: 30px;
+    text-align: center;
+    border-radius: 15px 15px 0px 0px;
+}
+
+#lastModified{
+    color: #fff6cc;
+}
+
+
+/* ----------------------------------Screen specifications------------------------------ */
+@media (min-width: 640px) {
+	nav ul {
+		display: flex;
+	}
+	nav ul li {
+		flex: 1 1 100%;
+        list-style-type: none;
+	}
+     
+}
+
+@media (max-width: 640px) {
+    nav ul li{
+        list-style-type: none;
+    }
+        
+    main{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    /* Left card */
+    #left-card{
+        flex: 1 1 100px;
+        margin: 5px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #top-group-left-card{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+
+    #bottom-group-left-card{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .left-card-about-ghana{
+        margin: 10px;
+        text-align: justify;
+    }
+
+
+    /* Rright card */
+    #right-card{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #right-card-links{
+        margin: 20px;
+        align-content: center;
+        text-align: left;
+        list-style-type: none;
+    }
+
+}
