@@ -1,0 +1,29 @@
+
+@media (min-width: 500px) {
+    
+    body{
+        font-family: roboto;
+    }
+
+    header, main, footer{
+        background-color: lightgreen;
+    }
+
+    header{
+        background-color: #132A13;
+        color: white;
+        border: 10px solid #132A13;
+    }
+
+    main{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+
+    main section{
+        padding: 1rem;
+        background-color: #FCFFE0;
+
+    }
+}
