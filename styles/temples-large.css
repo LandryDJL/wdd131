@@ -1,0 +1,117 @@
+ 
+@media (min-width: 800px) {
+
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        font-family: lora;
+        text-align: center;
+        display: grid;
+        grid-template-rows: auto 1fr auto;
+        margin: 0 auto;
+        max-width: 800px;
+        place-items: center;
+    }
+    
+    /* ------------------------------------------------------------header------------------------------------------------------------ */
+    header{
+        display: grid;
+        grid-template-columns: 20% 80%;
+        background-color: #440052;
+        width: 100%;
+        color: white;
+        padding: 20px;
+        align-items: center;
+    }
+    
+    header h1{
+        text-align: left;
+        text-shadow: -.5px .5px 3px bisque;
+        font-size: 20px;
+    }
+    
+    header h1:hover{
+        text-shadow: -.5px .5px 3px yellow;
+        cursor: pointer;
+    }
+    
+    nav{
+        justify-self: right;
+        width: 70%;
+    }
+    
+    nav ul{
+        display: flex;
+    }
+    
+    li{
+        flex: 1 1 100%;
+        list-style: none;
+        font-weight: bold;
+    }
+    
+    nav a{
+        text-decoration: none;
+        color: white;
+    }
+    
+    nav a:hover{
+        color: yellow;
+        text-shadow: -.5px .5px 3px yellow;
+        transition: 0.5s ease-in-out;
+    }
+
+    #active{
+        color: bisque;
+        text-decoration: overline;
+    }
+
+    
+
+    /* ------------------------------------------------------------main------------------------------------------------------------ */
+    main{
+        width: 800px;
+        text-align: center;
+        background-color: rgb(255, 248, 236);
+    }
+
+    #menu-title-selected{
+        color: #440052;
+    }
+    
+    #images-box-parent{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        padding: 20px;
+    }
+    
+    .image-box img{
+        width: 250px;
+        height: auto;
+        border: 2px solid #440052;
+    }
+    
+    .image-box:hover{
+        box-shadow: 0 0 15px #440052;
+    }
+    
+    .image-box img:hover{
+        border: 0px solid #440052;
+    }
+    
+    /* ------------------------------------------------------------footer------------------------------------------------------------ */
+    footer{
+        padding: 20px;
+        background-color: #440052;
+        width: 100%;
+        color: white;
+    }
+
+    #lastModified{
+        color: bisque;
+    }
+}

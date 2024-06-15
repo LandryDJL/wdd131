@@ -1,0 +1,155 @@
+
+@media (max-width: 800px) {
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        font-family: lora;
+        text-align: center;
+        display: grid;
+        grid-template-rows: auto 1fr auto;
+        margin: 0 auto;
+        place-items: center;
+    }
+    
+    /* ------------------------------------------------------------header------------------------------------------------------------ */
+    header{
+        display: flex;
+        flex-wrap: wrap;
+        background-color: #440052;
+        width: 100%;
+        color: white;
+        padding: 20px;
+    }
+    
+    header h1{
+        flex: 1 1 100%;
+        text-shadow: -.5px .5px 3px bisque;
+    }
+    
+    nav{
+        flex: 1 1 200px;
+    }
+    
+    nav ul{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    li{
+        flex: 1 1 100%;
+        list-style: none;
+        margin: 10px;
+        font-weight: bold;
+        display: none;
+        
+    }
+    
+    nav a{
+        display: block;
+        text-align: center;
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        transition: 0.5s ease-in-out;
+        padding: 2px;
+        width: 100%;
+    }
+    
+    nav a:hover{
+        color: yellow;
+        transition: 0.5s ease-in-out;
+        text-shadow: -.5px .5px 3px yellow;
+    }
+    
+    
+    #active {
+        color: bisque;
+        text-decoration: overline;
+    }
+
+    /* nav a:visited{
+        color: white;
+    } */
+    
+
+    #menu {
+        text-decoration: none;
+        color: white;
+        height: 105px;
+        position: absolute;
+        top: 30px;
+        right: 30px;
+    }
+
+    #menu::before{
+        content: "▼";
+    }
+
+    .show li{
+        display: block;
+    }
+    
+    #menu.show::before{
+        content: "◀";
+    }
+
+    /* ------------------------------------------------------------main------------------------------------------------------------ */
+    main{
+        max-width: 800px;
+        background-color: rgb(255, 248, 236);
+    }
+
+    #menu-title-selected{
+        color: #440052;
+    }
+
+    #images-parent{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+    }
+    
+    img{
+        flex: 1 1 150px;
+        border: 2px solid #440052;
+        margin: 20px;
+    }
+
+    .image-box:hover{
+        box-shadow: 0 0 15px #440052;
+    }
+    
+    /* ------------------------------------------------------------footer------------------------------------------------------------ */
+    footer{
+        display: block;
+        padding: 20px;
+        background-color: #440052;
+        width: 100%;
+        color: white;
+    }
+
+    #lastModified{
+        color: bisque;
+    }
+}
+
+@media (min-width: 400px) {
+    #menu {
+        position: absolute;
+        top: 30px;
+        right: 30px;
+    }
+
+}
+
+@media (max-width: 400px) {
+    #menu {
+        position: absolute;
+        right: 0;
+    }
+}
