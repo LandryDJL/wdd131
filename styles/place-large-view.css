@@ -1,0 +1,198 @@
+@media (min-width: 768px) {
+    *{
+        box-sizing: border-box;
+        margin: 0;
+    }
+
+    :root{
+        --primary-color: #004b23;
+        --secondary-color: #FF8200;
+        --tertiary-color: #FFFFFF;
+        --family-font: lora;
+    }
+
+    body{
+        display: grid;
+        text-align: center;
+        min-width: 320px;
+        max-width: 1232px;
+        font-family: var(--family-font);
+        margin: 0 auto;
+    }
+    
+    main{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    #hero {
+        grid-column: 1/4;
+        grid-row: 1/4;
+    }
+
+    #hero-image{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    #hero-image img{
+        width: 100%;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #data-country{
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+    #weather-country{
+        grid-column: 3/4;
+        grid-row: 3/4;
+    }
+
+    h1{
+        color: var(--tertiary-color);
+        background-color: var(--primary-color);
+        padding: 30px;
+        width: 100%;
+        font-size: 50px;
+    }
+
+    .top-hr{
+        background-color: var(--secondary-color);
+        height: 30px;
+        width: 100%;
+        border: 0px solid black;
+        margin-top: -5px;
+    }
+
+    .bottom-hr{
+        border: 0px solid black;
+        margin-top: -5px;
+    }
+
+    h2{
+        color: var(--primary-color);
+    }
+
+    #data-country{
+        background-color: var(--tertiary-color);
+        margin-top: 50px;
+        margin-left: 20px;
+        padding: 10px;
+        border-radius: 15px 15px 15px 15px;
+        box-shadow: 0 0 25px rgb(0, 0, 0);
+        opacity: 70%;
+    }
+
+    #data-country:hover{
+        box-shadow: 0 0 25px var(--secondary-color);
+        transition: 0.5s;
+        opacity: 100%;
+
+    }
+    
+    #weather-country{
+        background-color: var(--tertiary-color);
+        margin-bottom: 50px;
+        margin-right: 20px;
+        padding: 10px;
+        border-radius: 15px 15px 15px 15px;
+        box-shadow: 0 0 25px rgb(0, 0, 0);
+        opacity: 70%;
+    }
+    
+    #weather-country:hover{
+        box-shadow: 0 0 25px var(--secondary-color);
+        transition: 0.5s;
+        opacity: 100%;
+    }
+    
+    #data-detail, #weather-detail{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        justify-content: center;
+    }
+
+    .data-detail-title, .weather-detail-title{
+        text-align: right;
+    }
+
+    .data-detail-value, .weather-detail-value{
+        text-align: left;
+    }
+
+    #detail-country-block-title{
+        grid-column: 1/3;
+        text-align: left;
+        margin-left: -25px;
+        padding: 20px;
+        background-color: var(--primary-color);
+        color: var(--tertiary-color);
+        border-radius: 15px 15px 15px 15px ;
+    }
+
+    #detail-country-block-title h2{
+        color: var(--tertiary-color);
+    }
+
+    #weather-country{
+        display: grid;
+    }
+
+    #weather-country-block-title{
+        grid-column: 1/3;
+        display: flex;
+        margin-left: -25px;
+        background-color: var(--primary-color);
+        color: var(--tertiary-color);
+        border-radius: 15px 15px 15px 15px;
+    }
+
+    #weather-country-block-title h2{
+        color: var(--tertiary-color);
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-left: 20px;
+        
+    }
+    
+    #weather-detail h2{
+        grid-column: 1/3;
+        text-align: left;
+    }
+    
+    #seperator-line{
+        border: 0px solid black;
+    }
+    
+    #weather-country h2{
+        grid-column: 1/2;
+    }
+    
+    #weather-icon img{
+        width: 50px;
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-left: 10px;
+    }
+
+
+    footer{
+        background-color: var(--primary-color);
+        color: var(--tertiary-color);
+        padding: 30px;
+        text-align: center;
+        width: 1232px;
+    }
+
+    #lastModified{
+        color: #ffe6ca;
+    }
+
+}

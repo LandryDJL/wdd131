@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals. Dally Jacob Landry. HTML, CSS, JavaScript, web development, front-end development, coding, BYU Idaho.">
+    <meta name="author" content="Dally Jacob Landry">
+    <meta name="keywords" content="HTML, CSS, JavaScript, web development, front-end development, coding, BYU Idaho">
+    <link rel="stylesheet" href="styles/place-mobile.css">
+    <link rel="stylesheet" href="styles/place-large-view.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <script src="scripts/place.js" defer></script>
+    <title>Country</title>
+</head>
+<body>
+    <header>
+        <h1>Ivory Coast</h1>
+    </header>
+    <main>
+        <div id="hero">
+            <hr class="top-hr">
+            <picture id="hero-image">
+                <source srcset="images/place/elephants-small.webp"
+                        type="image/webp"
+                        media="(max-width: 767px)">
+                <source srcset="images/place/elephants-large.webp"
+                        type="image/webp"
+                        media="(min-width: 768px)">
+                <img src="images/place/elephants-small.webp" alt="elephants">
+            </picture>
+        
+            <hr class="bottom-hr">
+        </div>
+        <div id="data-country">
+            <section id="data-detail">
+                <div id="detail-country-block-title"><h2>Data</h2></div>
+                <p class="data-detail-title"><strong>Area:</strong></p>
+                <p class="data-detail-value">322,462 sq km</p>
+                <p class="data-detail-title"><strong>Population:</strong></p>
+                <p class="data-detail-value">30,900,000</p>
+                <p class="data-detail-title"><strong>Capital:</strong></p>
+                <p class="data-detail-value">Yamoussoukro</p>
+                <p class="data-detail-title"><strong>Languages:</strong></p>
+                <p class="data-detail-value">French, Bété, Dioula, Baoulé, Abron, Agni, ...</p>
+                <p class="data-detail-title"><strong>Currency:</strong></p>
+                <p class="data-detail-value">West African CFA franc (XOF)</p>
+                <p class="data-detail-title"><strong>Time Zone:</strong></p>
+                <p class="data-detail-value">UTC±00:00 (GMT)</p>
+                <p class="data-detail-title"><strong>Calling Code:</strong></p>
+                <p class="data-detail-value">+225</p>
+                <p class="data-detail-title"><strong>Internet TLD:</strong> </p>
+                <p class="data-detail-value">.ci</p>
+            </section>
+        </div>
+        <hr id="seperator-line">
+        <div id="weather-country">
+            <section id="weather-detail">
+                <div id="weather-country-block-title">
+                    <h2>Weather</h2>
+                    <picture id="weather-icon">
+                        <source srcset="images/place/weather_day_sand_sandstorm_sun_icon.svg"
+                                type="image/svg+xml"
+                                media="(max-width: 767px)">
+                        <source srcset="images/place/weather_clouds_sun_sunny_icon.svg"
+                                type="image/svg+xml"
+                                media="(min-width: 768px)">
+                        <img src="images/place/weather_day_sand_sandstorm_sun_icon.svg" alt="weather-icon">
+                    </picture>
+                </div>
+                <p class="weather-detail-title"><strong>Temperature:</strong></p>
+                <p id="temp" class="weather-detail-value"></p>
+                <p class="weather-detail-title"><strong>Conditions:</strong></p>
+                <p id="weatherCondition" class="weather-detail-value"></p>
+                <p class="weather-detail-title"><strong>Wind:</strong></p>
+                <p id="windSpeed" class="weather-detail-value"></p>
+                <p class="weather-detail-title"><strong>Wind Chill:</strong></p>
+                <p id="windChill" class="weather-detail-value"></p>
+            </section >
+        </div>
+    </main>
+    <footer>
+        <p><span id="current-year"></span> Dally Jacob Landry - Ivory Coast</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
