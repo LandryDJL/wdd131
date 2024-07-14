@@ -1,0 +1,13 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    display: block;
+    width: 400px;
+    margin: 0 auto;
+}
+
+h1{
+    text-align: center;
+}
