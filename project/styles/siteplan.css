@@ -1,9 +1,8 @@
 
 :root {
   --primary-color: #4040cc   ;
-  --secondary-color: #fff7db ;
-  --accent1-color: #ff6f00;
-  --accent2-color: white;
+  --secondary-color: #fffbeb ;
+  --accent-color: #ff6f00;
 
   --heading-font: "Titillium Web";
   --paragraph-font: Titillium Web, Helvetica, sans-serif;
@@ -14,7 +13,7 @@
   --paragraph-color-on-color: white; /* paragraph text on a colored background */ 
   --paragraph-background-color: #4040cc  ;
   --nav-link-color: #4040cc;
-  --nav-background-color: #fff7db;
+  --nav-background-color: #fffbeb;
   --nav-hover-link-color: white;
   --nav-hover-background-color: #ffae00;
 }
@@ -43,7 +42,7 @@ h2 {
 hr {
   height: 3px;
   margin: 35px 0;
-  background: var(--accent1-color);
+  background: var(--accent-color);
 }
 header {
   padding: 1em;
@@ -56,7 +55,7 @@ header > h1 {
 }
 
 a{
-  color: var(--accent1-color);
+  color: var(--accent-color);
 }
 
 p {
@@ -83,11 +82,8 @@ p {
 .secondary {
   background-color: var(--secondary-color);
 }
-.accent1 {
-  background-color: var(--accent1-color);
-}
-.accent2{
-  background-color: var(--accent2-color);
+.accent{
+  background-color: var(--accent-color);
 }
 
 .font-fam{
