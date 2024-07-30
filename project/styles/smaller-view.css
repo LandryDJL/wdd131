@@ -1,0 +1,232 @@
+
+@media screen and (max-width: 899px) {
+    #content{
+        width: 100%;
+        display: block;
+        font-family: "Titillium Web", Helvetica, sans-serif;
+        font-size: 18px;
+        z-index: -999;
+        position:absolute;
+    }
+    /* header */
+    header{
+        display: block;
+    }
+    .logo-img{
+        width: 150px;
+        margin: 0 auto;
+        text-align: center;
+    }
+    #logo_link{
+        text-align: center;
+    }
+    nav{
+        display: block;
+        width: 100%;
+        margin: auto;
+        text-align: center;
+    }
+    nav #button-get-started{
+        text-align: center;
+        text-decoration: none;
+        padding: 10px;
+        color: white;
+        align-self: flex-end;
+        background-color: #ffae00;
+        border-radius: 50px;
+    }
+    nav a{
+        text-align: center;
+        text-decoration: none;
+        padding: 10px;
+        color: #0000ff;
+        font-weight: bold;
+        margin-bottom: 50px;
+    }
+    
+    /* content */
+    #blue_bg{
+        background-color: #0000ff;
+        border-radius: 15px;
+        height: 100px;
+        z-index: -2;
+    }
+    #white_bg{
+        background-color: white;
+        border-radius: 15px;
+        height: 100px;
+        z-index: -1;
+        margin-top: 20px;
+    }
+    .home-grid{
+        width: fit-content;
+    }
+    #home-content{
+        text-align: center;
+        display: block;
+        margin-top: 50px;
+        background-color: #f7ebc0;
+        border-radius: 30px;
+        margin-left: 3%;
+        margin-right: 3%;
+        height: 100%;
+        z-index: -1;
+        position: relative;
+    }
+    #home-text{
+        display: block;
+        margin-top: 0;
+        height: auto;
+    }
+    h1{
+        font-size: xx-large;
+    }
+    #home-text p {
+        margin-top: 10px;
+    }
+    /* Slideshow container */
+    #home-slideshow{
+        border-radius: 10px;
+        margin: 50px auto 10px auto;
+        /* text-align: center; */
+        overflow: hidden;
+    }
+    
+    .Home-title{
+        color: #0b2e1a;
+        font-family: "Phudu", Georgia, 'Times New Roman', Times, serif;
+        font-size: 2em;
+        margin-top: 10px;
+    }
+
+    /* Footer */
+    footer{
+        display: block;
+        text-align: center;
+    }
+    footer .social{
+        display: inline;
+        margin: auto;
+    }
+    footer .social img{
+        width: 40px;
+        padding: 5px;
+        padding-top: 15px;
+    }
+    .copy{
+        font-size: 18px;
+        font-weight: bold;
+    }
+    footer p a{
+        color: #0000ff;
+        text-decoration: none;
+        padding: 10px;
+        width: 100%;
+        font-weight: bold;
+        border-radius: 100px;
+        border: 3px solid #0000ff;
+    }
+    footer p a:hover{
+        background-color: #0000ff;
+        color: white;
+        border-radius: 100px;
+        font-weight: bold;
+        padding: 10px;
+    }    
+    .footer-link{
+        display: inline-flex;
+    }
+
+    /* Services page */
+    .services-grid{
+        position: relative;
+    }
+    #services-content{
+        display: block;
+    }
+    .detail-services em{
+        font-weight: bold;
+    }
+    .services-background-content{
+        display: block;
+    }
+    .more-set{
+        background-color: white;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 250, 0.2), 0 6px 20px 0 rgba(0, 0, 250, 0.19);
+        margin: 15px;
+        text-align: center;
+        vertical-align: middle;
+        padding: 15%;
+    }
+    .more-set h4{
+        color: #0000ff;
+    }
+    .services-background-content a{
+        text-decoration: none;
+    }
+    .circles{
+        display: flex;
+        grid-template-columns: 25px 25px 25px;
+        justify-content: center;
+        align-content: end;
+    }
+
+     
+    /* Pricing page */
+    .pricing-grid{
+        position: relative;
+    }
+    .page-title {
+        align-self: center;
+    }
+    .pricing-background-content{
+        grid-column: 1/11;
+        display: block;
+        margin-top: 100px;
+        padding: 20px;
+        height: auto;
+        padding-bottom: 0;
+    }
+    .pricing-background-content .girl{
+        z-index: 0;
+        position: relative;
+        width: 80%;
+        margin: auto;
+    }
+
+    /* contactus page */
+    
+
+}
+
+@media screen and (max-width: 500px) {
+    /* Home page */
+    /* Slideshow container */
+    #home-slideshow{
+        width: 100%;
+    }
+   
+    .slideshow-container img{
+        width: 50%;
+    }
+   
+    .slideshow-container {
+        max-width: 80%;
+        margin: auto;
+    }
+
+    /* Pricing page */
+    .pricing-background-content{
+        padding-bottom: 0;
+    }
+    .pricing-background-content .girl{
+        width: 80%;
+        float: left;
+    }
+
+    /* Contact page */
+    form {
+        border-radius: 0px;
+        padding: 5px;
+    }
+} 

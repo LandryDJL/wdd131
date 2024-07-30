@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals. Dally Jacob Landry. HTML, CSS, JavaScript, web development, front-end development, coding, BYU Idaho.">
+    <meta name="author" content="Dally Jacob Landry">
+    <meta name="keywords" content="HTML, CSS, JavaScript, web development, front-end development, coding, BYU Idaho">
+    <link rel="stylesheet" href="styles/form.css">
+    <script type="text/JavaScript" src="scripts/form.js" defer></script>
+    <title>Form</title>
+</head>
+<body data-page="form">
+    <header>
+        <h1>Product review</h1>
+    </header>
+    <main>
+        <form action="review.html" method="get" id="product-review-form">
+            <fieldset>
+                <legend>Product name</legend>
+                <select name="product-selection" id="product-selection">
+                    <option value="" selected disabled>Select a Product ...</option>
+                </select>
+            </fieldset>
+            <fieldset id="radio-stars">
+                <legend>Overall Rating<span class="required-star"> *</span></legend>
+                <label class="star-radio"><div id="one-stars">&star;</div><input type="radio" name="stars" id="radio-one-stars" required></label>
+                <label class="star-radio"><div id="two-stars">&star;&star;</div><input type="radio" name="stars" id="radio-two-stars" required></label>
+                <label class="star-radio"><div id="three-stars">&star;&star;&star;</div><input type="radio" name="stars" id="radio-three-stars" required></label>
+                <label class="star-radio"><div id="four-stars">&star;&star;&star;&star;</div><input type="radio" name="stars" id="radio-four-stars" required> </label>
+                <label class="star-radio"><div id="five-stars">&star;&star;&star;&star;&star;</div><input type="radio" name="stars" id="radio-five-stars" required></label>
+            </fieldset>
+            <fieldset>
+                <legend>Date of Installation<span class="required-star"> *</span></legend>
+                <input type="date" id="date-selection" name="date-selection" required>
+            </fieldset>
+            <fieldset>
+                <legend>Which features did you find usefull in the product?<br><em>(Check all that apply)</em></legend>
+                <label><input type="checkbox" id="checkDurability" name="checkOption">Durability</label>
+                <label><input type="checkbox" id="checkEase" name="checkOption">Ease to use</label>
+                <label><input type="checkbox" id="checkPerformance" name="checkOption">Performance</label>
+                <label><input type="checkbox" id="checkDesign" name="checkOption">Design</label>
+            </fieldset>
+            <fieldset>
+                <legend>Written Review <span class="optional-keyword">(Optional)</span></legend>
+                <textarea name="review" id="review"></textarea>
+            </fieldset>
+            <fieldset>
+                <legend>Your name <span class="optional-keyword">(Optional)</span></legend>
+                <input type="text" name="user-name" id="user-name">
+            </fieldset>
+            <input id="submit-btn" type="submit" value="Post my Review">
+        </form>
+    </main>
+    <footer>
+        <div><span id="current-year"></span> Dally Jacob Landry - Ivory Coast</div>
+        <div id="lastModified"></div>
+    </footer>
+</body>
+</html>
